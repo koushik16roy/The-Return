@@ -21,6 +21,10 @@ public class Item : MonoBehaviour
 
     public bool playerCanGiveTo = false;
 
+    public bool playerCanReadTo = false;
+
+
+
     public bool InteractWith(GameController controller, string actionKeyword, string noun = "")
     {
         foreach(Interaction interaction in interactions)

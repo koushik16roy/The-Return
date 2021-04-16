@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     {
         return item.playerCanGiveTo;
     }
-
+   
     internal bool CanUseItem(GameController controller, Item item)
     {
         if (item.targetItem == null)
@@ -59,6 +59,20 @@ public class Player : MonoBehaviour
         if (currentLocation.HasItem(item.targetItem))
             return true;
         
+        return false;
+    }
+
+    internal bool CanReadItem(GameController controller, Item item)
+    {
+        if (item.targetItem == null)
+            return true;
+
+        if (HasItem(item.targetItem))
+            return true;
+
+        if (currentLocation.HasItem(item.targetItem))
+            return true;
+
         return false;
     }
 

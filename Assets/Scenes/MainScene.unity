@@ -337,6 +337,7 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 1
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &217971064
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +424,7 @@ Transform:
   - {fileID: 785384233}
   - {fileID: 707081608}
   - {fileID: 795849688}
+  - {fileID: 984440141}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -493,6 +495,7 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &334785219
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +565,7 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 1
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &458677620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1108,7 @@ MonoBehaviour:
   interactions: []
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &741054177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1216,7 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &795849687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1268,7 @@ MonoBehaviour:
   interactions: []
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &802242469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1336,7 @@ MonoBehaviour:
     teleportLocation: {fileID: 1892314632}
   playerCanTalkTo: 1
   playerCanGiveTo: 1
+  playerCanReadTo: 0
 --- !u!1 &940042562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1507,67 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
+--- !u!1 &984440140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984440141}
+  - component: {fileID: 984440142}
+  m_Layer: 0
+  m_Name: Plaque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &984440141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984440140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 266075107}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984440142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984440140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694778134cfa5dc458b6ca89d1e8901e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: plaque
+  description: A plaque embeded in the floor
+  playerCanTake: 0
+  itemEnabled: 1
+  targetItem: {fileID: 0}
+  interactions:
+  - action: {fileID: 11400000, guid: e38d956cf17d25b4ba131fe2357294a8, type: 2}
+    response: 
+    textToMatch: 
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
+    teleportLocation: {fileID: 0}
+  playerCanTalkTo: 0
+  playerCanGiveTo: 0
+  playerCanReadTo: 1
 --- !u!1 &1050244163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1619,7 @@ MonoBehaviour:
   interactions: []
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &1090986731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2789,7 @@ MonoBehaviour:
   interactions: []
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
 --- !u!1 &1737844224
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,3 +3496,4 @@ MonoBehaviour:
     teleportLocation: {fileID: 0}
   playerCanTalkTo: 0
   playerCanGiveTo: 0
+  playerCanReadTo: 0
